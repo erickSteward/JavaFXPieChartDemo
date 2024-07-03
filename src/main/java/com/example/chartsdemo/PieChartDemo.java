@@ -1,9 +1,7 @@
 package com.example.chartsdemo;
 
 import javafx.application.Application;
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
@@ -23,7 +21,7 @@ public class PieChartDemo extends Application {
         );
 
         PieChart chart = new PieChart(pieChartData);
-        chart.setTitle("Friut Consuption");
+        chart.setTitle("Fruit Consumption");
 
         Scene scene = new Scene(chart, 800, 600);
         stage.setTitle("Pie Chart Demo");
@@ -33,6 +31,6 @@ public class PieChartDemo extends Application {
     }
 
     public static void main(String[] args) {
-
+        launch(args);
     }
 }
